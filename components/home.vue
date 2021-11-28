@@ -9,21 +9,21 @@
         <div class="selct1" v-on:mouseover="hoverOn1" v-on:mouseleave="hoverOff1">
           <img class="slct-img1" src="./assets/Dsneaks1.png" alt="sneakers selection">
           <div class="addtoCart" v-if="visible1" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N25</span> </div>
+            <div class="text"><router-link to="/cart">add to cart <span>N25</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
         <div class="selct2" v-on:mouseover="hoverOn2" v-on:mouseleave="hoverOff2">
           <img class="slct-img2" src="./assets/Dsneaks2.png" alt="sneakers selection">
-          <div class="addtoCart" v-if="visible2" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N75</span> </div>
+          <div class="addtoCart" v-if="visible2"> 
+            <div class="text"><router-link to="/cart">add to cart <span>N25</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
         <div class="selct3" v-on:mouseover="hoverOn3" v-on:mouseleave="hoverOff3">
           <img class="slct-img3" src="./assets/Dsneaks3.png" alt="sneakers selection">
           <div class="addtoCart" v-if="visible3" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N25</span> </div>
+            <div class="text"><router-link to="/cart">add to cart <span>N25</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
@@ -34,21 +34,21 @@
         <div class="selct1" v-on:mouseover="hoverOn4" v-on:mouseleave="hoverOff4">
           <img class="slct-img1" src="./assets/Djacket1.png" alt="jackets selection">
           <div class="addtoCart" v-if="visible4" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N25</span> </div>
+            <div class="text"><router-link to="/cart">add to cart <span>N55</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
         <div class="selct2" v-on:mouseover="hoverOn5" v-on:mouseleave="hoverOff5">
           <img class="slct-img2" src="./assets/Djacket2.png" alt="jackets selection">
            <div class="addtoCart" v-if="visible5" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N25</span> </div>
+           <div class="text"><router-link to="/cart">add to cart <span>N65</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
         <div class="selct3" v-on:mouseover="hoverOn6" v-on:mouseleave="hoverOff6">
           <img class="slct-img3" src="./assets/Djacket3.png" alt="jackets selection">
            <div class="addtoCart" v-if="visible6" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N75</span> </div>
+           <div class="text"><router-link to="/cart">add to cart <span>N85</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
@@ -59,21 +59,21 @@
         <div class="selct1" v-on:mouseover="hoverOn7" v-on:mouseleave="hoverOff7">
           <img class="slct-img1" src="./assets/Dhat1.png" alt="hats selection">
           <div class="addtoCart" v-if="visible7" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N25</span> </div>
+            <div class="text"><router-link to="/cart">add to cart <span>N25</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
         <div class="selct2" v-on:mouseover="hoverOn8" v-on:mouseleave="hoverOff8">
           <img class="slct-img2" src="./assets/Dhat2.png" alt="hats selection">
           <div class="addtoCart" v-if="visible8" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N50</span> </div>
+           <div class="text"><router-link to="/cart">add to cart <span>N45</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
         <div class="selct3" v-on:mouseover="hoverOn9" v-on:mouseleave="hoverOff9">
           <img class="slct-img3" src="./assets/Dhat3.png" alt="hats selection">
           <div class="addtoCart" v-if="visible9" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N125</span> </div>
+           <div class="text"><router-link to="/cart">add to cart <span>N25</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
@@ -85,21 +85,21 @@
         <div class="selct1" v-on:mouseover="hoverOn10" v-on:mouseleave="hoverOff10">
           <img class="slct-img1" src="./assets/Dmen1.png" alt="men selection">
           <div class="addtoCart" v-if="visible10" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N50</span> </div>
+           <div class="text"><router-link to="/cart">add to cart <span>N25</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
         <div class="selct2" v-on:mouseover="hoverOn11" v-on:mouseleave="hoverOff11">
           <img class="slct-img2" src="./assets/Dmen2.png" alt="men selection">
           <div class="addtoCart" v-if="visible11" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N75</span> </div>
+            <div class="text"><router-link to="/cart">add to cart <span>N50</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
         <div class="selct3" v-on:mouseover="hoverOn12" v-on:mouseleave="hoverOff12">
           <img class="slct-img3" src="./assets/Dmen3.png" alt="men selection">
           <div class="addtoCart" v-if="visible12" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N25</span> </div>
+            <div class="text"><router-link to="/cart">add to cart <span>N75</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
@@ -113,21 +113,21 @@
         <div class="selct1" v-on:mouseover="hoverOn13" v-on:mouseleave="hoverOff13">
           <img class="slct-img1" src="./assets/Dwomen1.png" alt="women selection">
           <div class="addtoCart" v-if="visible13" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N50</span> </div>
+            <div class="text"><router-link to="/cart">add to cart <span>N150</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
         <div class="selct2" v-on:mouseover="hoverOn14" v-on:mouseleave="hoverOff14">
           <img class="slct-img2" src="./assets/Dwomen2.png" alt="women selection">
           <div class="addtoCart" v-if="visible14" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N25</span> </div>
+            <div class="text"><router-link to="/cart">add to cart <span>N75</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
         <div class="selct3" v-on:mouseover="hoverOn15" v-on:mouseleave="hoverOff15">
           <img class="slct-img3" src="./assets/Dwomen3.png" alt="women selection">
           <div class="addtoCart" v-if="visible15" > 
-            <div class="text">add to cart <span style="color:#8FDDE5">N100</span> </div>
+           <div class="text"><router-link to="/cart">add to cart <span>N25</span> </router-link></div>
           </div>
           <p>Lorem</p>
         </div>
@@ -142,7 +142,7 @@
 </template>
 
 <script>
-
+import {EventBus} from '../src/main'
 export default {
   components: {},
   data:  function() {
@@ -436,6 +436,11 @@ export default {
   flex-grow: 0;
   margin: 0px 10px;
   cursor:pointer;
+}
+
+.text a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .footer{

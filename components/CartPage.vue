@@ -14,24 +14,24 @@
             <p>Price</p>
             <p>Remove</p>
           </div>
-          <hr>
-          <div class="product">
+          <hr id="un">
+          <div class="product product1">
             <img src="./assets/Dsneaks1.png" alt="sneakers selection">
             <p id="desc">Lorem</p>
-            <p id="quantity">5</p>
+            <p id="quantity"><input type="number" v-model="product1" @change="calculateTotal"></p>
             <p id="price">N25</p>
-            <p id="remove">x</p>
+            <p id="remove" @click="removeProduct1">x</p>
           </div>
 
-          <div class="product">
-            <img src="./assets/Dsneaks3.png" alt="sneakers selection">
+          <div class="product product2">
+            <img src="./assets/Dwomen2.png" alt="sneakers selection">
             <p id="desc">Lorem</p>
-            <p id="quantity">1</p>
-            <p id="price">N25</p>
-            <p id="remove">x</p>
+            <p id="quantity"><input type="number" v-model="product2" @change="calculateTotal"></p>
+            <p id="price">N75</p>
+            <p id="remove" @click="removeProduct2">x</p>
           </div>
           <hr>
-        <p id="total">Total: N150</p>
+        <p id="total">Total: N{{totalprice}}</p>
         </div>
       </div>
     
@@ -40,7 +40,31 @@
 
 <script>
 export default {
-
+  data(){
+    return{
+      totalprice: 100,
+      product1: 1,
+      product2: 1,
+    }
+  },
+  methods:{
+    calculateTotal(){
+      let sumofProduct1 = this.product1 * 25
+      let sumofProduct2 = this.product2 * 75
+      let sum = sumofProduct1 + sumofProduct2
+      this.totalprice = sum
+    },
+    removeProduct1(){
+      document.querySelector('.product1').style.display = 'none'
+      this.product1 = 0
+      this.calculateTotal()
+    },
+    removeProduct2(){
+      document.querySelector('.product2').style.display = 'none'
+      this.product2 = 0
+      this.calculateTotal()
+    }
+  }
 }
 </script>
 
@@ -103,6 +127,20 @@ export default {
   place-items: center;
 }
 
+.cart .main .product #quantity{
+  width: 100%;
+}
+
+.cart .main .product #quantity input{
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid green;
+  outline: none;
+  text-align: center;
+  font-size: 15px;
+}
+
 .cart .main .product #remove{
   font-weight: bolder;
   cursor: pointer;
@@ -117,4 +155,38 @@ export default {
   height: 200px;
 }
 
+@media (max-width:950px){
+  .cart .main .title{
+    display: none;
+  }
+  #un{
+    display: none;
+  }
+  .cart .main .product{
+    gap: 20px;
+  }
+  .cart .main .product img{
+    width: 100%;
+    height: 100px;
+  }
+}
+
+@media (max-width:500px){
+  .cart .main .product img{
+      width: 100%;
+      height: 60px;
+  }
+  .cart .main .product #quantity input{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid green;
+    outline: none;
+    text-align: center;
+    font-size: 13px;
+  }
+  .cart .main #total{
+    font-size: 25px;
+  }
+}
 </style>
