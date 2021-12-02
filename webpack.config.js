@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
   entry: './src/main.js',
   output: {
@@ -7,6 +8,9 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'build.js'
   },
+  plugins: [
+    new UglifyJSPlugin()
+  ],
   module: {
     rules: [
       {
