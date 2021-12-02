@@ -1,10 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
-  plugins: [
-    new UglifyJSPlugin()
-  ],
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
